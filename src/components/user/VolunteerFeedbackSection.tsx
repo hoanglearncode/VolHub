@@ -204,7 +204,7 @@ export default function VolunteerFeedbackSection() {
                 </div>
 
                 <blockquote className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-6 italic">
-                  "{testimonials[currentTestimonial].feedback}"
+                  {testimonials[currentTestimonial].feedback}
                 </blockquote>
 
                 <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-4 mb-6">

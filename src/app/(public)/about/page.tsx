@@ -245,14 +245,7 @@ const AboutPage = () => {
             </div>
 
             {/* Content */}
-            <div className="lg:w-2/3">
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  {tabContent[activeTab].title}
-                </h2>
-                {tabContent[activeTab].content}
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
