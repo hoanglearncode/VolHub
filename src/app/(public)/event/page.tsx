@@ -14,25 +14,10 @@ export default function VolunteerRecruitmentPage() {
     motivation: ''
   });
 
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  const handleInputChange = () => {
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ sớm nhất.');
-    setShowApplyForm(false);
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      experience: '',
-      motivation: ''
-    });
-  };
+  const handleSubmit = () => {}
 
   const events = [
     {
@@ -263,7 +248,6 @@ export default function VolunteerRecruitmentPage() {
                     placeholder="Kinh nghiệm tình nguyện (nếu có)"
                     value={formData.experience}
                     onChange={handleInputChange}
-                    rows="3"
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                   <textarea
@@ -272,7 +256,6 @@ export default function VolunteerRecruitmentPage() {
                     value={formData.motivation}
                     onChange={handleInputChange}
                     required
-                    rows="3"
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                   <div className="flex space-x-3">

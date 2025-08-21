@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React , { useState } from "react";
 import { JSX } from "react";
+
 import {
   Mail,
   Phone,
@@ -37,7 +38,8 @@ interface FormState {
 
 type SubmitStatus = "success" | "error" | null;
 
-type IconComponent = (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+// Use a ComponentType for SVG icons to be compatible with lucide-react components
+type IconComponent = React.ComponentType<React.SVGProps<SVGSVGElement>>;
 
 interface CategoryItem {
   value: Category;
@@ -156,7 +158,8 @@ export default function Contact(): JSX.Element {
     if (errors[field]) {
       setErrors((prev) => {
         const copy = { ...prev };
-        delete copy[field];
+        // TS: ensure index signature happy
+        delete (copy as Partial<Record<string, string | undefined>>)[String(field)];
         return copy;
       });
     }

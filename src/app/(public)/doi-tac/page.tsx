@@ -18,11 +18,7 @@ export default function PartnerPage() {
     resources: ''
   });
 
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  const handleInputChange = () => {
   };
 
   const handleSubmit = () => {
@@ -396,7 +392,6 @@ export default function PartnerPage() {
                     placeholder="Mô tả về tổ chức và lĩnh vực hoạt động *"
                     value={formData.description}
                     onChange={handleInputChange}
-                    rows="3"
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                   />
                   <textarea
@@ -404,7 +399,6 @@ export default function PartnerPage() {
                     placeholder="Mục tiêu hợp tác và kỳ vọng *"
                     value={formData.partnershipGoals}
                     onChange={handleInputChange}
-                    rows="3"
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                   />
                   <textarea
@@ -412,7 +406,6 @@ export default function PartnerPage() {
                     placeholder="Nguồn lực có thể đóng góp (ngân sách, nhân lực, chuyên môn...)"
                     value={formData.resources}
                     onChange={handleInputChange}
-                    rows="3"
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                   />
                   <div className="flex space-x-3">
