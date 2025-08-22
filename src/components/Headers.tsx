@@ -19,7 +19,7 @@ export default function ClientNavBar() {
     { href: "/", title: "Trang Chủ" },
     { href: "/event", title: "Sự Kiện" },
     { href: "/volunteer", title: "Tình nguyện" },
-    { href: "/contests", title: "Về Chúng Tôi" },
+    { href: "/contests", title: "Cuộc thi" },
     { href: "/scholarship", title: "Học bổng" },
     { href: "/about", title: "Về Chúng Tôi" },
     { href: "/contact", title: "Liên Hệ" },
