@@ -96,7 +96,7 @@ export default function ClientNavBar() {
                 <div className="relative">
                   <img 
                     className="h-10 w-10 rounded-xl object-cover shadow-md ring-2 ring-white group-hover:ring-blue-200 transition-all duration-300" 
-                    src="banner.jpg"
+                    src="logo.svg"
                     alt="Volunteer Logo"
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

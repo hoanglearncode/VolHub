@@ -12,7 +12,7 @@ export default function Footer() {
                 <div className="relative">
                   <img
                     className="h-10 w-10 rounded-xl object-cover shadow-md ring-2 ring-white group-hover:ring-blue-200 transition-all duration-300"
-                    src="banner.jpg"
+                    src="logo.svg"
                     alt="Volunteer Logo"
                   />
                 </div>
