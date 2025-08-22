@@ -243,7 +243,7 @@ export default function ClientNavBar() {
           {/* Mobile Menu */}
           <div
             className={`md:hidden overflow-hidden transition-all duration-300 ${
-              menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              menuOpen ? "max-h-[70vh] opacity-100" : "max-h-0 opacity-0"
             }`}
           >
             <div className="py-4 space-y-1">
